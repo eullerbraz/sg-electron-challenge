@@ -4,9 +4,9 @@ import weatherContext from './weatherContext';
 import useWeather from '../hooks/useWeather';
 
 const Provider = ({ children }) => {
-  const { citiesData } = useWeather();
+  const { setCityName, cityData } = useWeather();
 
-  const contextValue = {};
+  const contextValue = { setCityName, cityData };
 
   return (
     <weatherContext.Provider value={ contextValue }>

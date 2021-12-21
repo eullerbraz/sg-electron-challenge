@@ -1,12 +1,10 @@
-import React from 'react';
-import useWeather from './hooks/useWeather';
+import { useContext } from 'react';
+import weatherContext from './context/weatherContext'
 
 const iconImage = 'http://openweathermap.org/img/wn/10d@2x.png';
 
 const App = () => {
-  const { cityData } = useWeather();
-
-  console.log(cityData);
+  const { setCityName, cityData } = useContext(weatherContext);
 
   return (
     <>
