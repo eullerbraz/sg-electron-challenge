@@ -13,6 +13,10 @@ const Header = () => {
         <Button text='Sydney' />
       </div>
       <div className='information-container'>
+        <img
+          className='header-icon'
+          src='./src/icons/header-icon.svg'
+        />
         <span>BR</span>
         <span>°C</span>
       </div>
