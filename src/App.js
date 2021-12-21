@@ -1,17 +1,14 @@
-import React, { useContext } from 'react';
-import weatherContext from './context/weatherContext'
+import React from 'react';
+import Provider from './context/Provider';
 import Header from './components/Header';
-
-const iconImage = 'http://openweathermap.org/img/wn/10d@2x.png';
+import Main from './components/Main';
 
 const App = () => {
-  const { setCityName, cityData } = useContext(weatherContext);
-
   return (
-    <>
+    <Provider>
       <Header />
-      <img src={ iconImage } style={ {width: '100px'} }/>
-    </>
+      <Main />
+    </Provider>
   );
 }
 
