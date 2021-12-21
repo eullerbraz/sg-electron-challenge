@@ -1,5 +1,6 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import weatherContext from './context/weatherContext'
+import Header from './components/Header';
 
 const iconImage = 'http://openweathermap.org/img/wn/10d@2x.png';
 
@@ -8,7 +9,7 @@ const App = () => {
 
   return (
     <>
-      <h1>React App!!! BR | °C</h1>
+      <Header />
       <img src={ iconImage } style={ {width: '100px'} }/>
     </>
   );
