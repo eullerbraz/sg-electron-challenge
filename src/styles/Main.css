@@ -1,0 +1,162 @@
+.main {
+  align-items: center;
+  background: linear-gradient(to bottom, #f2f4f4, #d1e0ed);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  max-width: 970px;
+  min-height: 60vh;
+  justify-content: space-between;
+  margin-top: 4vh;
+  padding: 5vh 3vw;
+  width: 50vw;
+}
+
+.card-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.city {
+  color: #4c6e8a;
+  font-size: 4.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.time {
+  color: #83a0b8;
+  font-size: 1.875rem;
+  letter-spacing: 0.05em;
+}
+
+.card-info-subtitles {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-between;
+}
+
+.subtitle {
+  color: #4c6e8a;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  line-height: 3rem;
+}
+
+.subtitle-value {
+  color: #83a0b8;
+  font-size: 2.375rem;
+  letter-spacing: 0.05em;
+  line-height: 2.8rem;
+}
+
+.card-info-icons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weather-description{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.05em;
+  line-height: 2.2rem;
+}
+
+.description-icon {
+  width: 6.5vw;
+}
+
+.description {
+  color: #83a0b8;
+  font-size: 1.875rem;
+  margin-top: 10px;
+  max-width: 200px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.temperature-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.actual-temperature {
+  color: #4c6e8a;
+  font-size: 4.375rem;
+  font-weight: 900;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.actual-temperature::after {
+  background: linear-gradient(to right, #a1bfd9, #d1e0ed, #a1bfd9);
+  bottom: -7px;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.max-min-temperature {
+  color: #83a0b8;
+  font-size: 2.125rem;
+}
+
+
+@media (max-width: 1366px) {
+  .card {
+    min-height: 65vh;
+  }
+
+  .city {
+    font-size: 3.5rem;
+  }
+
+  .time {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+  
+  .subtitle-value {
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    max-width: 130px;
+  }
+
+  .actual-temperature {
+    font-size: 3.6rem;
+    position: relative;
+  }
+
+  .max-min-temperature {
+    font-size: 2rem;
+  }
+}
+

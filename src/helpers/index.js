@@ -5,7 +5,9 @@ const getCityTime = (timezoneInSeconds) => {
   const dateUTC = now + ((timezoneInSeconds * 1000) - BRAZIL_TIMEZONE_IN_MS);
   const date = new Date(dateUTC);
 
-  return `${date.getHours()}:${date.getMinutes()}`;
+  return date
+    .toLocaleTimeString()
+    .slice(0, -3);
 };
 
 module.exports =  { getCityTime };

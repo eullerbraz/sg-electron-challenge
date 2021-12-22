@@ -34,11 +34,11 @@ const Card = () => {
     );
   }
 
-  const renderCardInfoSubtitle = (text, subtitle, value) => {
+  const renderCardInfoSubtitle = (text, value) => {
     return (
       <div className='card-info-subtitle'>
-        <h2 className={ `${subtitle}-subtitle` }>{ text }</h2>
-        <span className={ subtitle }>{ value }</span>
+        <h2 className={ `subtitle` }>{ text }</h2>
+        <span className='subtitle-value'>{ value }</span>
       </div>
     );
   }
@@ -46,9 +46,9 @@ const Card = () => {
   const renderCardInfoSubtitles = () => {
     return (
       <div className='card-info-subtitles'>
-        { renderCardInfoSubtitle('Sensação Térmica', 'feels-like', `${feelsLike}ºC`) }
-        { renderCardInfoSubtitle('Umidade', 'humidity', `${humidity}%`) }
-        { renderCardInfoSubtitle('Nebulosidade', 'cloudiness', `${cloudiness}%`) }
+        { renderCardInfoSubtitle('Sensação Térmica:', `${parseInt(feelsLike)}ºC`) }
+        { renderCardInfoSubtitle('Umidade:', `${humidity}%`) }
+        { renderCardInfoSubtitle('Nebulosidade:', `${cloudiness}%`) }
       </div>
     );
   }
@@ -60,7 +60,7 @@ const Card = () => {
           src={ `./src/icons/weather-icons/${icon}.svg` }
           className='description-icon'
         />
-        <span className='description'>{ description }</span>
+        <span className='description'>{ 'description text euller bruna muito grande isso aqui' }</span>
       </div>
     );
   }
@@ -68,8 +68,8 @@ const Card = () => {
   const renderTemperatureContainer = () => {
     return (
       <div className='temperature-container'>
-        <span className='actual-temperature'>{ `${temp}ºC` }</span>
-        <span className='max-min-temperature'>{ `${tempMin}º/${tempMax}º` }</span>
+        <span className='actual-temperature'>{ `${parseInt(temp)}ºC` }</span>
+        <span className='max-min-temperature'>{ `${parseInt(tempMin)}º / ${parseInt(tempMax)}º` }</span>
       </div>
     );
   }
