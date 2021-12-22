@@ -1,13 +1,13 @@
 {
   "name": "sg-electron-challenge",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Weather app using React and Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "watch": "webpack  --config webpack.common.js --watch"
   },
-  "author": "Victor Ximenis",
+  "author": "Euller Braz",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",

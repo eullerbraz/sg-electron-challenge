@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=VCl8li22mrA
+// https://github.com/Jerga99/electron-chat
+
 const path = require('path');
 
 module.exports = {
