@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getCityDate } from '../helpers';
+import { getCityTime } from '../helpers';
 
 const CITIES = [
   'London',
@@ -42,7 +42,7 @@ const useWeather = () => {
       setCityData(
         {
           ...city,
-          date: getCityDate(city.timezone),
+          time: getCityTime(city.timezone),
         }
       );
     }
