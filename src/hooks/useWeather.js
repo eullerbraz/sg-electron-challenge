@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { getCityTime } from '../helpers';
 
+const appid = '0100a1d7bddd55407c2f9b64e0fe7d08';
+
 const CITIES = [
   'London',
   'New Delhi',
@@ -10,7 +12,7 @@ const CITIES = [
 ];
 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const API_PARAMS = '&appid=0100a1d7bddd55407c2f9b64e0fe7d08&units=metric&lang=pt_br';
+const API_PARAMS = `&appid=${appid}&units=metric&lang=pt_br`;
 
 const useWeather = () => {
   const [citiesData, setCitiesData] = useState([]);
