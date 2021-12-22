@@ -10,6 +10,7 @@ const Main = () => {
       <img
         className='logo'
         src='./src/icons/logo.svg'
+        alt='weather-app-logo'
       />
       <Card />
     </main>

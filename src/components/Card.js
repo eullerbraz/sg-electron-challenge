@@ -59,6 +59,7 @@ const Card = () => {
         <img
           src={ `./src/icons/weather-icons/${icon}.svg` }
           className='description-icon'
+          alt='weather-icon'
         />
         <span className='description'>{ 'description text euller bruna muito grande isso aqui' }</span>
       </div>

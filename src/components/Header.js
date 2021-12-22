@@ -20,6 +20,7 @@ const Header = () => {
           <img
             className='header-icon'
             src='./src/icons/header-icon.svg'
+            alt='world-icon'
           />
           <div className="infos">
             <span className='language'>BR</span>
