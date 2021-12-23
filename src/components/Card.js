@@ -61,7 +61,7 @@ const Card = () => {
           className='description-icon'
           alt='weather-icon'
         />
-        <span className='description'>{ 'description text euller bruna muito grande isso aqui' }</span>
+        <span className='description'>{ description }</span>
       </div>
     );
   }
